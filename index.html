@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Zonas de Potencia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Zonas de Potencia</h1>
+        <label for="ftp">Ingresa tu FTP (Potencia Máxima en Ciclismo):</label>
+        <input type="number" id="ftp" placeholder="Ej: 250">
+        <button onclick="calcularZonas()">Calcular</button>
+
+        <div id="resultado" class="resultado">
+            <h2>Zonas de Trabajo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Porcentaje</th>
+                        <th>Potencia (Watts)</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaZonas">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
