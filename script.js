@@ -15,7 +15,7 @@ function calcularZonas() {
 	];
 
 	const porcentajesMostrar = [
-		50, 60, 70, 75, 80, 85, 90, 95, 100, 105, 110, 120,
+		50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 120,
 	];
 	const tablaZonasBody = document.getElementById("tablaZonas");
 	tablaZonasBody.innerHTML = ""; // Limpiar la tabla anterior
