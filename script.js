@@ -8,14 +8,16 @@ function calcularZonas() {
 	}
 
 	const zonasDefinidas = [
+		{ porcentajeMin: 0, porcentajeMax: 55, colorClass: "zona-1" },
 		{ porcentajeMin: 56, porcentajeMax: 74, colorClass: "zona-2" },
 		{ porcentajeMin: 75, porcentajeMax: 89, colorClass: "zona-3" },
 		{ porcentajeMin: 90, porcentajeMax: 104, colorClass: "zona-4" },
-		{ porcentajeMin: 105, porcentajeMax: Infinity, colorClass: "zona-5" },
+		{ porcentajeMin: 105, porcentajeMax: 119, colorClass: "zona-5" },
+		{ porcentajeMin: 120, porcentajeMax: Infinity, colorClass: "zona-6" },
 	];
 
 	const porcentajesMostrar = [
-		50, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 120,
+		55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120,
 	];
 	const tablaZonasBody = document.getElementById("tablaZonas");
 	tablaZonasBody.innerHTML = ""; // Limpiar la tabla anterior

@@ -73,18 +73,26 @@ th {
 }
 
 /* Estilos para los colores de las zonas */
-.zona-2 {
+.zona-1 {
 	background-color: #00bdfc; /* Azul */
 }
 
-.zona-3 {
+.zona-2 {
 	background-color: #0cf00c; /* Verde */
 }
 
-.zona-4 {
+.zona-3 {
 	background-color: #ffff00; /* Amarillo */
 }
 
+.zona-4 {
+	background-color: #fe8d03; /* Rojo */
+}
+
 .zona-5 {
-	background-color: #ff4800; /* Rojo */
+	background-color: #f40707; /* Rojo */
+}
+
+.zona-6 {
+	background-color: #c3058a; /* Rojo */
 }
