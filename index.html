@@ -2,30 +2,47 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+		<meta name="theme-color" content="#212529" media="(prefers-color-scheme: dark)" />
+		<meta name="theme-color" content="#ecebe6" media="(prefers-color-scheme: light)" />
+		<meta name="color-scheme" content="dark light" />
 		<title>Calculadora de Zonas de Potencia</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@500;700&family=Urbanist:wght@400;500;600;700&display=swap"
+		/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div class="container">
-			<h1>Calculadora de Zonas de Potencia</h1>
-			<label for="ftp">Ingresa tu FTP (Potencia Máxima en Ciclismo):</label>
-			<input type="number" id="ftp" placeholder="Ej: 200" />
-			<button onclick="calcularZonas()">Calcular</button>
+		<main class="container">
+			<header class="encabezado">
+				<p class="marca">losqq · ciclismo</p>
+				<h1>Zonas de potencia</h1>
+			</header>
 
-			<div id="resultado" class="resultado">
-				<h2>Zonas de Trabajo</h2>
-				<table>
-					<thead>
-						<tr>
-							<th>Porcentaje</th>
-							<th>Potencia (Watts)</th>
-						</tr>
-					</thead>
-					<tbody id="tablaZonas"></tbody>
-				</table>
-			</div>
-		</div>
+			<form id="formFtp" class="entrada" novalidate>
+				<label for="ftp">Tu FTP</label>
+				<div class="campo">
+					<input
+						type="number"
+						id="ftp"
+						inputmode="numeric"
+						min="1"
+						placeholder="200"
+						autocomplete="off"
+					/>
+					<span class="unidad">W</span>
+				</div>
+				<p id="error" class="error" role="alert" hidden>Ingresa un FTP válido, mayor que 0.</p>
+				<button type="submit">Calcular</button>
+			</form>
+
+			<section id="resultado" class="resultado" hidden>
+				<ul id="tablaZonas" class="zonas"></ul>
+			</section>
+		</main>
 
 		<script src="script.js"></script>
 	</body>
